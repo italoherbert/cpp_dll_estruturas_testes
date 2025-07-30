@@ -252,7 +252,7 @@
 	"arvore_testes.h"
 	<iostream>
 
-1753882973 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\arvoreagenda.cpp
+1753898404 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\arvoreagenda.cpp
 	"ArvoreAgenda.h"
 	"pessoa/pessoa_io.h"
 	"util/readutil.h"
@@ -260,12 +260,12 @@
 	<iostream>
 	<string>
 
-1753655610 c:\users\italo\workspace-cpp\estruturastestes\include\util\readutil.h
+1753898274 c:\users\italo\workspace-cpp\estruturastestes\include\util\readutil.h
 	<iostream>
 
-1753655598 c:\users\italo\workspace-cpp\estruturastestes\include\util\numutil.h
+1753898247 c:\users\italo\workspace-cpp\estruturastestes\include\util\numutil.h
 
-1753882986 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\arvoremenulistar.cpp
+1753898365 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\arvoremenulistar.cpp
 	"ArvoreMenuListar.h"
 	"pessoa/pessoa_io.h"
 	"util/readutil.h"
@@ -273,13 +273,13 @@
 	<iostream>
 	<string>
 
-1753882961 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\pessoa\perc\pornomeinipessoapercit.cpp
+1753898416 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\pessoa\perc\pornomeinipessoapercit.cpp
 	"PorNomeIniPessoaPercIT.h"
 	"../pessoa_io.h"
 	"util/strutil.h"
 	<iostream>
 
-1753882471 c:\users\italo\workspace-cpp\estruturastestes\include\util\strutil.h
+1753898291 c:\users\italo\workspace-cpp\estruturastestes\include\util\strutil.h
 	<iostream>
 
 1753882948 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\pessoa\pessoa_io.cpp

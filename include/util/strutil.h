@@ -9,7 +9,11 @@
 
 #include <iostream>
 
-STRUTIL_API std::string toLower( std::string str );
-STRUTIL_API bool startsWith( std::string str, std::string ini );
+namespace strutil {
+
+    STRUTIL_API std::string toLower( std::string str );
+    STRUTIL_API bool startsWith( std::string str, std::string ini );
+
+}
 
 #endif

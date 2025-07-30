@@ -7,7 +7,9 @@
 
 #include <iostream>
 #include <string>
+
 using namespace std;
+using namespace readutil;
 
 ArvoreMenuListar::ArvoreMenuListar( IDArvore* pessoaArvore ) {
 	this->pessoaArvore = pessoaArvore;

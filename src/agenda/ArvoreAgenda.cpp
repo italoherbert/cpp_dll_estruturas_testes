@@ -8,6 +8,8 @@
 #include <string>
 
 using namespace std;
+using namespace readutil;
+using namespace numutil;
 
 ArvoreAgenda::ArvoreAgenda() {
 	this->pessoaArvore = new IDArvore();

@@ -7,6 +7,10 @@
 #define NUMUTIL_API __declspec(dllimport)
 #endif
 
-NUMUTIL_API int sorteiaNumero();
+namespace numutil {
+
+    NUMUTIL_API int sorteiaNumero();
+
+}
 
 #endif

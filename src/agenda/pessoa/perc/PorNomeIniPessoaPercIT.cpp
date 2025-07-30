@@ -4,7 +4,9 @@
 #include "util/strutil.h"
 
 #include <iostream>
+
 using namespace std;
+using namespace strutil;
 
 PorNomeIniPessoaPercIT::PorNomeIniPessoaPercIT( string nomeIni ) {
 	this->nomeIni = nomeIni;

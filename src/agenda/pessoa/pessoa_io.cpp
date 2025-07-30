@@ -6,6 +6,7 @@
 #include <string>
 
 using namespace std;
+using namespace readutil;
 
 void exibePessoa( Pessoa* pessoa ) {
 	cout << "ID: " << pessoa->getId() << endl;
