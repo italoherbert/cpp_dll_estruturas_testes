@@ -237,14 +237,15 @@
 1753639624 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\comp\idobjcomparador.h
 	"ObjComparador.h"
 
-1753881319 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.cpp
+1753896399 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
-	"util/IDObjeto.h"
-	"util/it/Iterador.h"
+	"estrutura/IDArvore.h"
+	"estrutura/IDObjeto.h"
+	"estrutura/it/Iterador.h"
+	"util/arrayutil.h"
 	<iostream>
 
-1753881294 c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.h
-	"util/IDArvore.h"
+1753883201 c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.h
 
 1753878654 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\testes_main.cpp
 	"testes_main.h"
@@ -286,4 +287,9 @@
 	"util/readutil.h"
 	<iostream>
 	<string>
+
+1753897860 c:\users\italo\workspace-cpp\estruturastestes\include\util\arrayutil.h
+	"comp/Comparador.h"
+
+1753893552 c:\users\italo\workspace-cpp\estruturastestes\include\util\comp\comparador.h
 
