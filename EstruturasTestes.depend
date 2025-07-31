@@ -312,3 +312,193 @@
 	<vector>
 	<functional>
 
+1753898404 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\arvoreagenda.cpp
+	"ArvoreAgenda.h"
+	"pessoa/pessoa_io.h"
+	"util/readutil.h"
+	"util/numutil.h"
+	<iostream>
+	<string>
+
+1753883034 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\arvoreagenda.h
+	"ArvoreMenuListar.h"
+	"pessoa/Pessoa.h"
+	"estrutura/IDArvore.h"
+	<iostream>
+
+1753883018 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\arvoremenulistar.h
+	"pessoa/perc/TudoPessoaPercIT.h"
+	"pessoa/perc/PorNomeIniPessoaPercIT.h"
+	"pessoa/perc/PorIdadePessoaPercIT.h"
+	"estrutura/IDArvore.h"
+
+1753883067 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\tudopessoapercit.h
+	"../Pessoa.h"
+	"estrutura/PercIT.h"
+
+1753883047 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\pessoa.h
+	"estrutura/IDObjeto.h"
+	<iostream>
+
+1753697457 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\idobjeto.h
+	"Objeto.h"
+
+1753619706 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\objeto.h
+
+1753637631 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\percit.h
+	"Objeto.h"
+
+1753883062 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\pornomeinipessoapercit.h
+	"../Pessoa.h"
+	"estrutura/PercIT.h"
+
+1753883056 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\poridadepessoapercit.h
+	"../Pessoa.h"
+	"estrutura/PercIT.h"
+
+1753917830 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\idarvore.h
+	"Arvore.h"
+	"IDObjeto.h"
+	"comp/IDObjComparador.h"
+
+1753827102 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
+	"Objeto.h"
+	"PercIT.h"
+	"Estrutura.h"
+	"structdef.h"
+	"comp/ObjComparador.h"
+	"comp/CampoComparador.h"
+	"it/Iterador.h"
+
+1753827477 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\estrutura.h
+	"Objeto.h"
+	"PercIT.h"
+	"comp/ObjComparador.h"
+	"comp/CampoComparador.h"
+	"it/Iterador.h"
+
+1753638207 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\comp\objcomparador.h
+	"../Objeto.h"
+
+1753638216 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\comp\campocomparador.h
+	"../Objeto.h"
+
+1753824481 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\it\iterador.h
+	"../Objeto.h"
+
+1753812903 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\structdef.h
+	"Objeto.h"
+
+1753639624 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\comp\idobjcomparador.h
+	"ObjComparador.h"
+
+1753627472 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\pessoa_io.h
+	"Pessoa.h"
+
+1753898274 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\readutil.h
+	<iostream>
+
+1753898247 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\numutil.h
+
+1753898365 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\arvoremenulistar.cpp
+	"ArvoreMenuListar.h"
+	"pessoa/pessoa_io.h"
+	"util/readutil.h"
+	"estrutura/it/Iterador.h"
+	<iostream>
+	<string>
+
+1753639347 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\poridadepessoapercit.cpp
+	"PorIdadePessoaPercIT.h"
+	"../pessoa_io.h"
+
+1753898416 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\pornomeinipessoapercit.cpp
+	"PorNomeIniPessoaPercIT.h"
+	"../pessoa_io.h"
+	"util/strutil.h"
+	<iostream>
+
+1753898291 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\strutil.h
+	<iostream>
+
+1753639186 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\tudopessoapercit.cpp
+	"TudoPessoaPercIT.h"
+	"../pessoa_io.h"
+
+1753627242 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\pessoa.cpp
+	"Pessoa.h"
+
+1753898434 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\pessoa_io.cpp
+	"pessoa_io.h"
+	"util/readutil.h"
+	<iostream>
+	<string>
+
+1753878766 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\main.cpp
+	<iostream>
+	"testes/testes_main.h"
+	"agenda/ArvoreAgenda.h"
+	<iostream>
+
+1753878539 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.h
+
+1753999855 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
+	"arvore_testes.h"
+	"estrutura/IDArvore.h"
+	"estrutura/IDObjeto.h"
+	"estrutura/PercIT.h"
+	"estrutura/it/Iterador.h"
+	"util/vectutil.h"
+	"testesunit/testesunit.h"
+	"testesunit/Testes.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<functional>
+
+1753910789 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.h
+
+1753639612 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\comp\idcampocomparador.h
+	"CampoComparador.h"
+
+1753911139 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\vectutil.h
+	<iostream>
+	<vector>
+
+1753982027 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\testesutil.h
+	<iostream>
+	<vector>
+	<functional>
+
+1753910780 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.cpp
+	"testes_main.h"
+	"arvore_testes.h"
+	<iostream>
+
+1753985558 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\testes\testesutil.h
+	<iostream>
+	<vector>
+
+1753985325 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\testes\testes.h
+	<iostream>
+	<functional>
+	<vector>
+
+1753996764 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testes\testesutil.h
+	<iostream>
+	<vector>
+
+1753996784 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testes\testes.h
+	<iostream>
+	<functional>
+	<vector>
+
+1754001410 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testesunit.h
+	<iostream>
+	<vector>
+
+1753996784 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testes.h
+	<iostream>
+	<functional>
+	<vector>
+

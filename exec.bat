@@ -13,6 +13,11 @@ set estruturas_proj_dir=..\Estruturas
 set estruturas_proj_src=%estruturas_proj_dir%\src
 set estruturas_proj_dll_file=%estruturas_proj_dir%\bin\Debug\Estruturas.dll
 
+set testesunit_dll_file=%root_dir%\TestesUnit.dll
+set testesunit_proj_dir=..\TestesUnit
+set testesunit_proj_src=%testesunit_proj_dir%\src
+set testesunit_proj_dll_file=%testesunit_proj_dir%\bin\Debug\TestesUnit.dll
+
 set /a cont=0
 
 if %1==limpar (
@@ -20,10 +25,12 @@ if %1==limpar (
 ) else if %1==copiar (
     call :copia_utils_lib
     call :copia_estruturas_lib
+    call :copia_testesunit_lib
 ) else if %1==build (
     call :limpa
     call :copia_utils_lib
     call :copia_estruturas_lib
+    call :copia_testesunit_lib
 ) else if %1==push (
     call :push
 ) else if %1==pushall (
@@ -69,6 +76,15 @@ exit /b 0
     echo Foi realizada a copia dos arquivos da biblioteca Estruturas.dll
 exit /b 0
 
+:copia_testesunit_lib
+    xcopy %testesunit_proj_src% %include_dir% /s /q
+    del /s /q %include_dir%\*.cpp
+
+    copy %testesunit_proj_dll_file% %root_dir%
+
+    echo Foi realizada a copia dos arquivos da biblioteca TestesUnit.dll
+exit /b 0
+
 :push
     git add .
 
@@ -87,6 +103,11 @@ exit /b 0
     git push -u origin main
 
     cd %estruturas_proj_dir%
+    git add .
+    git commit -m "%msg%"
+    git push -u origin main
+
+    cd %testesunit_proj_dir%
     git add .
     git commit -m "%msg%"
     git push -u origin main

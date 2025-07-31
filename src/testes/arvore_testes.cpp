@@ -5,15 +5,15 @@
 #include "estrutura/IDObjeto.h"
 #include "estrutura/PercIT.h"
 #include "estrutura/it/Iterador.h"
-#include "estrutura/comp/IDCampoComparador.h"
 
 #include "util/vectutil.h"
-#include "util/testesutil.h"
+
+#include "testesunit/testesunit.h"
+#include "testesunit/Testes.h"
 
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <cstdlib>
 #include <functional>
 
 using namespace std;
@@ -59,7 +59,7 @@ namespace arvore_testes {
         while( it->temProx() )
             inseridos.push_back( ((IDObjeto*)it->prox())->getId() );
 
-        testesutil::verificaSeIguais( inseridos, ordenados );
+        testesunit::devemSerIguais( inseridos, ordenados );
     }
 
     void alteraTeste() {
@@ -72,7 +72,7 @@ namespace arvore_testes {
 
         IDObjeto* obj2 = arv->busca( 17 );
 
-        testesutil::verificaSeIguais( obj, obj2 );
+        testesunit::devemSerIguais( obj, obj2 );
     }
 
     void deletaTeste() {
@@ -101,8 +101,16 @@ namespace arvore_testes {
 
         IDObjeto* dados = arv->deleta( 0 );
 
-        testesutil::verificaSeNulo( dados );
-        testesutil::verificaSeIguais( ids, inseridos );
+        testesunit::deveSerNulo( dados );
+        testesunit::devemSerIguais( ids, inseridos );
+
+        arv->deletaTodos();
+
+
+    }
+
+    void deletaTudoTeste() {
+
     }
 
     vector<int> criaIDs() {
