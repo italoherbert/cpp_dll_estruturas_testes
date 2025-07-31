@@ -26,6 +26,8 @@ if %1==limpar (
     call :copia_estruturas_lib
 ) else if %1==push (
     call :push
+) else if %1==pushall (
+    call :pushall
 )
 
 goto :fim
@@ -73,6 +75,25 @@ exit /b 0
     set /p msg="Commit MSG: "
     git commit -m "%msg%"
 
+    git push -u origin main
+exit /b 0
+
+:pushall
+    set /p msg="Commit MSG: "
+
+    cd %utils_proj_dir%
+    git add .
+    git commit -m "%msg%"
+    git push -u origin main
+
+    cd %estruturas_proj_dir%
+    git add .
+    git commit -m "%msg%"
+    git push -u origin main
+
+    cd %root_dir%
+    git add .
+    git commit -m "%msg%"
     git push -u origin main
 exit /b 0
 
