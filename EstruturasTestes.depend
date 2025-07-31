@@ -201,7 +201,7 @@
 	"../Pessoa.h"
 	"estrutura/PercIT.h"
 
-1753717351 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\idarvore.h
+1753917830 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\idarvore.h
 	"Arvore.h"
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
@@ -237,17 +237,24 @@
 1753639624 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\comp\idobjcomparador.h
 	"ObjComparador.h"
 
-1753896399 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.cpp
+1753922635 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
 	"estrutura/IDArvore.h"
 	"estrutura/IDObjeto.h"
+	"estrutura/PercIT.h"
 	"estrutura/it/Iterador.h"
-	"util/arrayutil.h"
+	"estrutura/comp/IDCampoComparador.h"
+	"util/vectutil.h"
+	"util/testesutil.h"
 	<iostream>
+	<vector>
+	<algorithm>
+	<cstdlib>
+	<functional>
 
-1753883201 c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.h
+1753910789 c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.h
 
-1753878654 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\testes_main.cpp
+1753910780 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\testes_main.cpp
 	"testes_main.h"
 	"arvore_testes.h"
 	<iostream>
@@ -282,7 +289,7 @@
 1753898291 c:\users\italo\workspace-cpp\estruturastestes\include\util\strutil.h
 	<iostream>
 
-1753882948 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\pessoa\pessoa_io.cpp
+1753898434 source:c:\users\italo\workspace-cpp\estruturastestes\src\agenda\pessoa\pessoa_io.cpp
 	"pessoa_io.h"
 	"util/readutil.h"
 	<iostream>
@@ -292,4 +299,16 @@
 	"comp/Comparador.h"
 
 1753893552 c:\users\italo\workspace-cpp\estruturastestes\include\util\comp\comparador.h
+
+1753911139 c:\users\italo\workspace-cpp\estruturastestes\include\util\vectutil.h
+	<iostream>
+	<vector>
+
+1753639612 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\comp\idcampocomparador.h
+	"CampoComparador.h"
+
+1753922158 c:\users\italo\workspace-cpp\estruturastestes\include\util\testesutil.h
+	<iostream>
+	<vector>
+	<functional>
 

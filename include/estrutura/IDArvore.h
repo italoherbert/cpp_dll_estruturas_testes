@@ -27,7 +27,7 @@ class ID_ARVORE_API IDArvore : public Arvore {
 		void insere( IDObjeto* );
 		IDObjeto* busca( int );
 		bool altera( IDObjeto* );
-		bool deleta( int );
+		IDObjeto* deleta( int );
 
 };
 

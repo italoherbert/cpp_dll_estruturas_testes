@@ -3,75 +3,114 @@
 
 #include "estrutura/IDArvore.h"
 #include "estrutura/IDObjeto.h"
+#include "estrutura/PercIT.h"
 #include "estrutura/it/Iterador.h"
+#include "estrutura/comp/IDCampoComparador.h"
 
-#include "util/arrayutil.h"
+#include "util/vectutil.h"
+#include "util/testesutil.h"
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cstdlib>
+#include <functional>
 
 using namespace std;
-using namespace arrayutil;
 
 IDObjeto* criaIDObjeto( int );
-IDArvore* criaArvore( int[], int );
+IDArvore* criaArvore( vector<int> );
 
-int* criaIDs( int* );
+vector<int> criaIDs();
 
-bool arvoreInsereTeste();
-bool arvoreIteradorTeste();
+namespace arvore_testes {
 
-bool arvoreTodosOsTestes() {
-    bool sucesso = arvoreInsereTeste();
-    if ( sucesso )
-        sucesso = arvoreIteradorTeste();
-    return sucesso;
-}
+    bool insereTeste();
+    bool iteradorTeste();
+    bool alteraTeste();
+    bool deletaTeste();
 
-bool arvoreInsereTeste() {
-    int tam;
-    int* ids = criaIDs( &tam );
-
-    criaArvore( ids, tam );
-
-    cout << "arvoreInsereTeste - Ok" << endl;
-
-    return true;
-}
-
-bool arvoreIteradorTeste() {
-    int tam;
-    int* ids = criaIDs( &tam );
-    int* ordenados = copiaVetor( ids, tam );
-    int inseridos[ tam ];
-
-    selectionSort( ordenados, tam );
-
-    IDArvore* arv = criaArvore( ids, tam );
-
-    Iterador* it = arv->it();
-    int i = 0;
-    while( it->temProx() ) {
-        inseridos[ i ] = ((IDObjeto*)it->prox())->getId();
-        i++;
+    bool executaTodosOsTestes() {
+        Testes testes( "arvore" );
+        testes.add( "insereTeste", insereTeste );
+        testes.add( "iteradorTeste", iteradorTeste );
+        testes.add( "alteraTeste", alteraTeste );
+        testes.add( "deletaTeste", deletaTeste );
+        return testes.executa();
     }
 
-    bool sucesso = verificaSeArraysIguais( inseridos, ordenados, tam );
+    bool insereTeste() {
+        vector<int> ids = criaIDs();
+        criaArvore( ids );
 
-    if ( sucesso )
-        cout << "arvoreIteradorTest - Ok" << endl;
-    else cout << "arvoreIteradorTest - Falha" << endl;
+        return true;
+    }
 
-    return sucesso;
+    bool iteradorTeste() {
+        vector<int> ids = criaIDs();
+        vector<int> inseridos;
+
+        vector<int> ordenados(ids.size());
+        copy( ids.begin(), ids.end(), ordenados.begin() );
+
+        sort( ordenados.begin(), ordenados.end() );
+
+        IDArvore* arv = criaArvore( ids );
+
+        Iterador* it = arv->it();
+        while( it->temProx() )
+            inseridos.push_back( ((IDObjeto*)it->prox())->getId() );
+
+        return vectutil::verificaSeIguais( inseridos, ordenados );
+    }
+
+    bool alteraTeste() {
+        return false;
+    }
+
+    bool deletaTeste() {
+        vector<int> ids = criaIDs();
+
+        IDArvore* arv = criaArvore( ids );
+
+        arv->deleta( 5 );
+        arv->deleta( 16 );
+        arv->deleta( 1 );
+        arv->deleta( 10 );
+
+        ids.erase( ids.begin() + vectutil::indice( ids, 5 ) );
+        ids.erase( ids.begin() + vectutil::indice( ids, 16 ) );
+        ids.erase( ids.begin() + vectutil::indice( ids, 1 ) );
+        ids.erase( ids.begin() + vectutil::indice( ids, 10 ) );
+
+        sort( ids.begin(), ids.end() );
+
+        vector<int> inseridos;
+
+        Iterador* it = arv->it();
+        while( it->temProx() ) {
+            int num = ((IDObjeto*)it->prox())->getId();
+            inseridos.push_back( num );
+        }
+
+        IDObjeto* dados = arv->deleta( 0 );
+
+        bool sucesso = dados == NULL;
+        if ( sucesso )
+            sucesso = vectutil::verificaSeIguais( ids, inseridos );
+        return sucesso;
+    }
+
 }
 
-int* criaIDs( int* tam ) {
-    int ids[] = { 10, 5, 3, 4, 2, 1, 18, 17, 16, 19 };
-    *tam = 10;
-    return copiaVetor( ids, *tam );
+vector<int> criaIDs() {
+    vector<int> ids = { 10, 5, 3, 4, 2, 1, 18, 16, 17, 19 };
+    return ids;
 }
 
-IDArvore* criaArvore( int ids[], int tam ) {
+IDArvore* criaArvore( vector<int> ids ) {
     IDArvore* arv = new IDArvore();
+    int tam = ids.size();
     for( int i = 0; i < tam; i++ )
         arv->insere( criaIDObjeto( ids[ i ] ) );
     return arv;

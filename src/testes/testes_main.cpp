@@ -8,7 +8,7 @@
 using namespace std;
 
 void executaTodosOsTestes() {
-    bool sucesso = arvoreTodosOsTestes();
+    bool sucesso = arvore_testes::executaTodosOsTestes();
     if ( sucesso )
         cout << "Todos os testes executados com sucesso." << endl;
 }

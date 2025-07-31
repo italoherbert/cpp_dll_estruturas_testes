@@ -19,22 +19,6 @@ namespace arrayutil {
 
     ARRAY_UTIL_API void inversoSelectionSort( int*, int );
 
-
-    template <typename T>
-    bool verificaSeArraysIguais2( T* a1, T* a2, int tam );
-
-    template <typename T>
-    T* copiaVetor2( T* vetor, int tam );
-
-    template <typename T>
-    void selectionSort2( T* vetor, int tam );
-
-    template <typename T>
-    void inversoSelectionSort2( T* vetor, int tam );
-
-    template <typename T>
-    void selectionSort2( T* vetor, int tam, Comparador<T>* comp );
-
 }
 
 #endif
