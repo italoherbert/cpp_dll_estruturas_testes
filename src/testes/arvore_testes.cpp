@@ -18,17 +18,17 @@
 
 using namespace std;
 
-IDObjeto* criaIDObjeto( int );
-IDArvore* criaArvore( vector<int> );
-
-vector<int> criaIDs();
-
 namespace arvore_testes {
 
-    bool insereTeste();
-    bool iteradorTeste();
-    bool alteraTeste();
-    bool deletaTeste();
+    void insereTeste();
+    void iteradorTeste();
+    void alteraTeste();
+    void deletaTeste();
+
+    IDObjeto* criaIDObjeto( int );
+    IDArvore* criaArvore( vector<int> );
+
+    vector<int> criaIDs();
 
     bool executaTodosOsTestes() {
         Testes testes( "arvore" );
@@ -39,18 +39,16 @@ namespace arvore_testes {
         return testes.executa();
     }
 
-    bool insereTeste() {
+    void insereTeste() {
         vector<int> ids = criaIDs();
         criaArvore( ids );
-
-        return true;
     }
 
-    bool iteradorTeste() {
+    void iteradorTeste() {
         vector<int> ids = criaIDs();
         vector<int> inseridos;
 
-        vector<int> ordenados(ids.size());
+        vector<int> ordenados( ids.size() );
         copy( ids.begin(), ids.end(), ordenados.begin() );
 
         sort( ordenados.begin(), ordenados.end() );
@@ -61,16 +59,24 @@ namespace arvore_testes {
         while( it->temProx() )
             inseridos.push_back( ((IDObjeto*)it->prox())->getId() );
 
-        return vectutil::verificaSeIguais( inseridos, ordenados );
+        testesutil::verificaSeIguais( inseridos, ordenados );
     }
 
-    bool alteraTeste() {
-        return false;
-    }
-
-    bool deletaTeste() {
+    void alteraTeste() {
         vector<int> ids = criaIDs();
+        IDArvore* arv = criaArvore( ids );
 
+        IDObjeto* obj = criaIDObjeto( 17 );
+
+        arv->altera( obj );
+
+        IDObjeto* obj2 = arv->busca( 17 );
+
+        testesutil::verificaSeIguais( obj, obj2 );
+    }
+
+    void deletaTeste() {
+        vector<int> ids = criaIDs();
         IDArvore* arv = criaArvore( ids );
 
         arv->deleta( 5 );
@@ -95,29 +101,27 @@ namespace arvore_testes {
 
         IDObjeto* dados = arv->deleta( 0 );
 
-        bool sucesso = dados == NULL;
-        if ( sucesso )
-            sucesso = vectutil::verificaSeIguais( ids, inseridos );
-        return sucesso;
+        testesutil::verificaSeNulo( dados );
+        testesutil::verificaSeIguais( ids, inseridos );
     }
 
-}
+    vector<int> criaIDs() {
+        vector<int> ids = { 10, 5, 3, 4, 2, 1, 18, 16, 17, 19 };
+        return ids;
+    }
 
-vector<int> criaIDs() {
-    vector<int> ids = { 10, 5, 3, 4, 2, 1, 18, 16, 17, 19 };
-    return ids;
-}
+    IDArvore* criaArvore( vector<int> ids ) {
+        IDArvore* arv = new IDArvore();
+        int tam = ids.size();
+        for( int i = 0; i < tam; i++ )
+            arv->insere( criaIDObjeto( ids[ i ] ) );
+        return arv;
+    }
 
-IDArvore* criaArvore( vector<int> ids ) {
-    IDArvore* arv = new IDArvore();
-    int tam = ids.size();
-    for( int i = 0; i < tam; i++ )
-        arv->insere( criaIDObjeto( ids[ i ] ) );
-    return arv;
-}
+    IDObjeto* criaIDObjeto( int id ) {
+        IDObjeto* obj = new IDObjeto();
+        obj->setId( id );
+        return obj;
+    }
 
-IDObjeto* criaIDObjeto( int id ) {
-    IDObjeto* obj = new IDObjeto();
-    obj->setId( id );
-    return obj;
 }

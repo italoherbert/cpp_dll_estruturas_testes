@@ -237,7 +237,7 @@
 1753639624 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\comp\idobjcomparador.h
 	"ObjComparador.h"
 
-1753922635 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.cpp
+1753963945 source:c:\users\italo\workspace-cpp\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
 	"estrutura/IDArvore.h"
 	"estrutura/IDObjeto.h"
@@ -307,7 +307,7 @@
 1753639612 c:\users\italo\workspace-cpp\estruturastestes\include\estrutura\comp\idcampocomparador.h
 	"CampoComparador.h"
 
-1753922158 c:\users\italo\workspace-cpp\estruturastestes\include\util\testesutil.h
+1753963906 c:\users\italo\workspace-cpp\estruturastestes\include\util\testesutil.h
 	<iostream>
 	<vector>
 	<functional>
