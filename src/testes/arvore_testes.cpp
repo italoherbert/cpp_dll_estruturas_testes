@@ -24,6 +24,7 @@ namespace arvore_testes {
     void iteradorTeste();
     void alteraTeste();
     void deletaTeste();
+    void buscaTeste();
 
     IDObjeto* criaIDObjeto( int );
     IDArvore* criaArvore( vector<int> );
@@ -36,12 +37,15 @@ namespace arvore_testes {
         testes.add( "iteradorTeste", iteradorTeste );
         testes.add( "alteraTeste", alteraTeste );
         testes.add( "deletaTeste", deletaTeste );
+        testes.add( "buscaTeste", buscaTeste );
         return testes.executa();
     }
 
     void insereTeste() {
         vector<int> ids = criaIDs();
-        criaArvore( ids );
+        IDArvore* arv = criaArvore( ids );
+
+        delete arv;
     }
 
     void iteradorTeste() {
@@ -79,6 +83,9 @@ namespace arvore_testes {
         vector<int> ids = criaIDs();
         IDArvore* arv = criaArvore( ids );
 
+        testesunit::devemSerIguais( arv->getTamanho(), 10 );
+        testesunit::devemSerIguais( arv->tamanho(), 10 );
+
         arv->deleta( 5 );
         arv->deleta( 16 );
         arv->deleta( 1 );
@@ -103,14 +110,25 @@ namespace arvore_testes {
 
         testesunit::deveSerNulo( dados );
         testesunit::devemSerIguais( ids, inseridos );
+        testesunit::devemSerIguais( arv->getTamanho(), 6 );
+        testesunit::devemSerIguais( arv->tamanho(), 6 );
 
         arv->deletaTodos();
 
+        testesunit::devemSerIguais( arv->getTamanho(), 0 );
+        testesunit::devemSerIguais( arv->tamanho(), 0 );
 
+        delete arv;
     }
 
-    void deletaTudoTeste() {
+    void buscaTeste() {
+        vector<int> ids = criaIDs();
+        IDArvore* arv = criaArvore( ids );
 
+        IDObjeto* obj = arv->busca( 17 );
+
+        testesunit::deveSerNaoNulo( obj );
+        testesunit::devemSerIguais( obj->getId(), 17 );
     }
 
     vector<int> criaIDs() {
