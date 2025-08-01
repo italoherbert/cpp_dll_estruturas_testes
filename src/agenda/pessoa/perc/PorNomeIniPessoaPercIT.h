@@ -2,7 +2,7 @@
 #define POR_NOME_INI_PESSOA_PERC_IT_H
 
 #include "../Pessoa.h"
-#include "estrutura/PercIT.h"
+#include "estrutura/perc/PercIT.h"
 
 using namespace std;
 

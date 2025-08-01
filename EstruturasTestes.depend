@@ -332,9 +332,9 @@
 	"pessoa/perc/PorIdadePessoaPercIT.h"
 	"estrutura/IDArvore.h"
 
-1753883067 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\tudopessoapercit.h
+1754039933 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\tudopessoapercit.h
 	"../Pessoa.h"
-	"estrutura/PercIT.h"
+	"estrutura/perc/PercIT.h"
 
 1753883047 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\pessoa.h
 	"estrutura/IDObjeto.h"
@@ -348,31 +348,31 @@
 1753637631 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\percit.h
 	"Objeto.h"
 
-1753883062 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\pornomeinipessoapercit.h
+1754039946 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\pornomeinipessoapercit.h
 	"../Pessoa.h"
-	"estrutura/PercIT.h"
+	"estrutura/perc/PercIT.h"
 
-1753883056 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\poridadepessoapercit.h
+1754039950 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\agenda\pessoa\perc\poridadepessoapercit.h
 	"../Pessoa.h"
-	"estrutura/PercIT.h"
+	"estrutura/perc/PercIT.h"
 
 1753917830 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\idarvore.h
 	"Arvore.h"
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
 
-1753827102 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
+1754039412 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
 	"Objeto.h"
-	"PercIT.h"
 	"Estrutura.h"
 	"structdef.h"
+	"perc/PercIT.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
 
-1753827477 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\estrutura.h
+1754039441 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\estrutura.h
 	"Objeto.h"
-	"PercIT.h"
+	"perc/PercIT.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
@@ -442,11 +442,11 @@
 
 1753878539 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.h
 
-1754006186 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
+1754041239 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
 	"estrutura/IDArvore.h"
 	"estrutura/IDObjeto.h"
-	"estrutura/PercIT.h"
+	"estrutura/perc/PercIT.h"
 	"estrutura/it/Iterador.h"
 	"util/vectutil.h"
 	"testesunit/testesunit.h"
@@ -470,10 +470,11 @@
 	<vector>
 	<functional>
 
-1753910780 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.cpp
+1754043656 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.cpp
 	"testes_main.h"
 	"arvore_testes.h"
-	<iostream>
+	"lista_testes.h"
+	"testesunit/GrupoDeTestes.h"
 
 1753985558 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\testes\testesutil.h
 	<iostream>
@@ -498,6 +499,43 @@
 	<vector>
 
 1753996784 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testes.h
+	<iostream>
+	<functional>
+	<vector>
+
+1754039550 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\perc\percit.h
+	"../Objeto.h"
+
+1754039805 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\perc\idpercit.h
+	"PercIT.h"
+	"../Objeto.h"
+
+1754045053 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.cpp
+	"lista_testes.h"
+	"estrutura/IDObjeto.h"
+	"estrutura/IDLista.h"
+	"testesunit/testesunit.h"
+	"testesunit/Testes.h"
+	<iostream>
+	<vector>
+
+1754041669 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.h
+
+1754042260 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\idlista.h
+	"Lista.h"
+	"IDObjeto.h"
+	"comp/IDObjComparador.h"
+
+1754039563 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\lista.h
+	"Objeto.h"
+	"Estrutura.h"
+	"structdef.h"
+	"perc/PercIT.h"
+	"comp/ObjComparador.h"
+	"comp/CampoComparador.h"
+	"it/Iterador.h"
+
+1754043573 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\grupodetestes.h
 	<iostream>
 	<functional>
 	<vector>

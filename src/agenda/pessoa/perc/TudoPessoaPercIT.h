@@ -2,7 +2,7 @@
 #define TUDO_PESSOA_PERC_IT_H
 
 #include "../Pessoa.h"
-#include "estrutura/PercIT.h"
+#include "estrutura/perc/PercIT.h"
 
 class TudoPessoaPercIT : public PercIT {
 

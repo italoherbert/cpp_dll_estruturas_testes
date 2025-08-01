@@ -19,6 +19,7 @@
 					<Add option="-L." />
 					<Add library="Utils" />
 					<Add library="Estruturas" />
+					<Add library="TestesUnit" />
 				</Linker>
 			</Target>
 			<Target title="Release">

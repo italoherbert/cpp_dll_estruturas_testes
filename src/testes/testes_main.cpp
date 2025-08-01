@@ -2,13 +2,13 @@
 #include "testes_main.h"
 
 #include "arvore_testes.h"
+#include "lista_testes.h"
 
-#include <iostream>
-
-using namespace std;
+#include "testesunit/GrupoDeTestes.h"
 
 void executaTodosOsTestes() {
-    bool sucesso = arvore_testes::executaTodosOsTestes();
-    if ( sucesso )
-        cout << "Todos os testes executados com sucesso." << endl;
+    GrupoDeTestes* testes = new GrupoDeTestes();
+    testes->add( arvore_testes::executaTodosOsTestes );
+    testes->add( lista_testes::executaTodosOsTestes );
+    testes->executa();
 }

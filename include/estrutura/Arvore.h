@@ -8,9 +8,9 @@
 #endif
 
 #include "Objeto.h"
-#include "PercIT.h"
 #include "Estrutura.h"
 #include "structdef.h"
+#include "perc/PercIT.h"
 #include "comp/ObjComparador.h"
 #include "comp/CampoComparador.h"
 #include "it/Iterador.h"
