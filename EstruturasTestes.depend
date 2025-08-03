@@ -361,7 +361,7 @@
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
 
-1754039412 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
+1754051106 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
 	"Objeto.h"
 	"Estrutura.h"
 	"structdef.h"
@@ -386,7 +386,7 @@
 1753824481 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\it\iterador.h
 	"../Objeto.h"
 
-1753812903 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\structdef.h
+1754134799 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\structdef.h
 	"Objeto.h"
 
 1753639624 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\comp\idobjcomparador.h
@@ -442,11 +442,11 @@
 
 1753878539 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.h
 
-1754041239 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
+1754150248 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
 	"estrutura/IDArvore.h"
 	"estrutura/IDObjeto.h"
-	"estrutura/perc/PercIT.h"
+	"estrutura/perc/VectorIDPercIT.h"
 	"estrutura/it/Iterador.h"
 	"util/vectutil.h"
 	"testesunit/testesunit.h"
@@ -510,14 +510,17 @@
 	"PercIT.h"
 	"../Objeto.h"
 
-1754045053 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.cpp
+1754050867 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.cpp
 	"lista_testes.h"
 	"estrutura/IDObjeto.h"
 	"estrutura/IDLista.h"
+	"estrutura/perc/VectorIDPercIT.h"
 	"testesunit/testesunit.h"
 	"testesunit/Testes.h"
+	"util/vectutil.h"
 	<iostream>
 	<vector>
+	<algorithm>
 
 1754041669 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.h
 
@@ -526,7 +529,7 @@
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
 
-1754039563 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\lista.h
+1754050708 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\lista.h
 	"Objeto.h"
 	"Estrutura.h"
 	"structdef.h"
@@ -538,5 +541,9 @@
 1754043573 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\grupodetestes.h
 	<iostream>
 	<functional>
+	<vector>
+
+1754049582 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\perc\vectoridpercit.h
+	"PercIT.h"
 	<vector>
 

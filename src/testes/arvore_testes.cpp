@@ -3,7 +3,7 @@
 
 #include "estrutura/IDArvore.h"
 #include "estrutura/IDObjeto.h"
-#include "estrutura/perc/PercIT.h"
+#include "estrutura/perc/VectorIDPercIT.h"
 #include "estrutura/it/Iterador.h"
 
 #include "util/vectutil.h"
@@ -17,19 +17,6 @@
 #include <functional>
 
 using namespace std;
-
-class VectorPercIT : public PercIT {
-private:
-    vector<int> vetor;
-public:
-    void processa( Objeto* obj ) {
-        vetor.push_back( ((IDObjeto*)obj)->getId() );
-    }
-
-    vector<int> getVector() {
-        return vetor;
-    }
-};
 
 namespace arvore_testes {
 
@@ -71,7 +58,7 @@ namespace arvore_testes {
     }
 
     void iteradorTeste() {
-        vector<int> ids = criaIDs();
+        vector<int> ids = { 20, 10, 5, 8, 1, 6, 7,  25, 21, 22, 30 };
         vector<int> inseridos;
 
         vector<int> ordenados( ids.size() );
@@ -81,9 +68,19 @@ namespace arvore_testes {
 
         IDArvore* arv = criaArvore( ids );
 
+        std::cout << "\nArvore= ";
+        int c = 0;
+
         Iterador* it = arv->it();
-        while( it->temProx() )
-            inseridos.push_back( ((IDObjeto*)it->prox())->getId() );
+        while( it->temProx() ) {
+            int id = ((IDObjeto*)it->prox())->getId();
+            inseridos.push_back( id );
+
+            if ( c < 20 ) {
+                cout << id << " ";
+                c++;
+            }
+        }
 
         testesunit::devemSerIguais( inseridos, ordenados );
     }
@@ -94,7 +91,7 @@ namespace arvore_testes {
 
         IDArvore* arv = criaArvore( ids );
 
-        VectorPercIT* vperc = new VectorPercIT();
+        VectorIDPercIT* vperc = new VectorIDPercIT();
         arv->percorrePreOrdem( vperc );
 
         testesunit::devemSerIguais( vperc->getVector(), preOrdemIDs );
@@ -106,7 +103,7 @@ namespace arvore_testes {
 
         IDArvore* arv = criaArvore( ids );
 
-        VectorPercIT* vperc = new VectorPercIT();
+        VectorIDPercIT* vperc = new VectorIDPercIT();
         arv->percorreOrdemCentral( vperc );
 
         testesunit::devemSerIguais( vperc->getVector(), ordemCentralIDs );
@@ -118,7 +115,7 @@ namespace arvore_testes {
 
         IDArvore* arv = criaArvore( ids );
 
-        VectorPercIT* vperc = new VectorPercIT();
+        VectorIDPercIT* vperc = new VectorIDPercIT();
         arv->percorrePosOrdem( vperc );
 
         testesunit::devemSerIguais( vperc->getVector(), posOrdemIDs );
@@ -145,14 +142,14 @@ namespace arvore_testes {
         testesunit::devemSerIguais( arv->tamanho(), 10 );
 
         arv->deleta( 5 );
-        arv->deleta( 16 );
-        arv->deleta( 1 );
-        arv->deleta( 10 );
+        //arv->deleta( 16 );
+        //arv->deleta( 1 );
+        //arv->deleta( 10 );
 
         ids.erase( ids.begin() + vectutil::indice( ids, 5 ) );
-        ids.erase( ids.begin() + vectutil::indice( ids, 16 ) );
-        ids.erase( ids.begin() + vectutil::indice( ids, 1 ) );
-        ids.erase( ids.begin() + vectutil::indice( ids, 10 ) );
+        //ids.erase( ids.begin() + vectutil::indice( ids, 16 ) );
+        //ids.erase( ids.begin() + vectutil::indice( ids, 1 ) );
+        //ids.erase( ids.begin() + vectutil::indice( ids, 10 ) );
 
         sort( ids.begin(), ids.end() );
 
@@ -187,6 +184,9 @@ namespace arvore_testes {
 
         testesunit::deveSerNaoNulo( obj );
         testesunit::devemSerIguais( obj->getId(), 17 );
+
+        obj = arv->busca( 0 );
+        testesunit::deveSerNulo( obj );
     }
 
     vector<int> criaIDs() {

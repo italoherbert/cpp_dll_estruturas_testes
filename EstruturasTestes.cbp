@@ -56,6 +56,8 @@
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/testes/arvore_testes.cpp" />
 		<Unit filename="src/testes/arvore_testes.h" />
+		<Unit filename="src/testes/lista_testes.cpp" />
+		<Unit filename="src/testes/lista_testes.h" />
 		<Unit filename="src/testes/testes_main.cpp" />
 		<Unit filename="src/testes/testes_main.h" />
 		<Extensions>

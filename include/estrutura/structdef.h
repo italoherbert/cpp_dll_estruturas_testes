@@ -5,6 +5,8 @@
 
 typedef struct TArv {
     Objeto* dados;
+    bool iterado;
+    struct TArv* pai;
     struct TArv* esq;
     struct TArv* dir;
 } Arv;

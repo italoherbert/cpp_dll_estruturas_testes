@@ -22,7 +22,7 @@ class ARVORE_API Arvore : public Estrutura {
 		ObjComparador* objComparador;
 		int tam;
 
-		void insereEmArvore( Arv**, Objeto* );
+		void insereEmArvore( Arv**, Arv*, Objeto* );
 		void percorreArvorePreOrdem( Arv*, PercIT* );
 		void percorreArvoreOrdemCentral( Arv*, PercIT* );
 		void percorreArvorePosOrdem( Arv*, PercIT* );

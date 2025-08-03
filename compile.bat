@@ -1,0 +1,12 @@
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\ArvoreAgenda.cpp -o obj\Debug\src\agenda\ArvoreAgenda.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\ArvoreMenuListar.cpp -o obj\Debug\src\agenda\ArvoreMenuListar.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\pessoa\perc\PorIdadePessoaPercIT.cpp -o obj\Debug\src\agenda\pessoa\perc\PorIdadePessoaPercIT.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\pessoa\perc\PorNomeIniPessoaPercIT.cpp -o obj\Debug\src\agenda\pessoa\perc\PorNomeIniPessoaPercIT.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\pessoa\perc\TudoPessoaPercIT.cpp -o obj\Debug\src\agenda\pessoa\perc\TudoPessoaPercIT.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\pessoa\Pessoa.cpp -o obj\Debug\src\agenda\pessoa\Pessoa.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\agenda\pessoa\pessoa_io.cpp -o obj\Debug\src\agenda\pessoa\pessoa_io.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\main.cpp -o obj\Debug\src\main.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\testes\arvore_testes.cpp -o obj\Debug\src\testes\arvore_testes.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\testes\lista_testes.cpp -o obj\Debug\src\testes\lista_testes.o
+g++.exe -Wall -fexceptions -g -Iinclude -c C:\Users\italo\workspace-cpp\dlls\EstruturasTestes\src\testes\testes_main.cpp -o obj\Debug\src\testes\testes_main.o
+g++.exe  -o bin\Debug\EstruturasTestes.exe obj\Debug\src\agenda\ArvoreAgenda.o obj\Debug\src\agenda\ArvoreMenuListar.o obj\Debug\src\agenda\pessoa\perc\PorIdadePessoaPercIT.o obj\Debug\src\agenda\pessoa\perc\PorNomeIniPessoaPercIT.o obj\Debug\src\agenda\pessoa\perc\TudoPessoaPercIT.o obj\Debug\src\agenda\pessoa\Pessoa.o obj\Debug\src\agenda\pessoa\pessoa_io.o obj\Debug\src\main.o obj\Debug\src\testes\arvore_testes.o obj\Debug\src\testes\lista_testes.o obj\Debug\src\testes\testes_main.o  -L.  -lUtils -lEstruturas -lTestesUnit

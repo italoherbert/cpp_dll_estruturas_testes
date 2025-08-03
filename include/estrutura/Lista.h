@@ -45,7 +45,6 @@ class LISTA_API Lista : public Estrutura {
 
 	    int getTamanho();
 	    int tamanho();
-	    Objeto* get( int );
 
 		void insere( Objeto* );
 		void insereNoInicio( Objeto* );
@@ -53,11 +52,14 @@ class LISTA_API Lista : public Estrutura {
 		void percorre( PercIT* );
 		void percorreOrdemInversa( PercIT* );
         Iterador* it();
+        Iterador* inversoIt();
 		Objeto* busca( CampoComparador* );
 		bool altera( CampoComparador*, Objeto* );
 		Objeto* deleta( CampoComparador* );
 		void deletaTodos( bool deletarObjetos = false );
 		Objeto* pop();
+	    Objeto* get( int );
+
 };
 
 #endif

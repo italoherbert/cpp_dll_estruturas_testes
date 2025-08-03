@@ -1,17 +1,23 @@
 #ifndef ARVORE_ORDEM_CENTRAL_ITERADOR_H
 #define ARVORE_ORDEM_CENTRAL_ITERADOR_H
 
-#include "ArvoreIterador.h"
+#include "Iterador.h"
 #include "../Objeto.h"
 #include "../structdef.h"
 
-class ArvoreOrdemCentralIterador : public ArvoreIterador {
+class ArvoreOrdemCentralIterador : public Iterador {
 
     private:
-        void pushEsquerdosNaPilha( Arv* );
+        Arv* perc;
+        bool vaiParaBaixo;
+        bool vemDeCima;
+
+        Arv* menorEsq( Arv* );
+        Arv* paiNaoIterado( Arv* );
 
 	public:
 	    ArvoreOrdemCentralIterador( Arv* );
+	    bool temProx();
 		Objeto* prox();
 
 };
