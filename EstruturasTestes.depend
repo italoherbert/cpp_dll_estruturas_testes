@@ -361,7 +361,7 @@
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
 
-1754051106 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
+1754221059 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\arvore.h
 	"Objeto.h"
 	"Estrutura.h"
 	"structdef.h"
@@ -370,7 +370,7 @@
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
 
-1754039441 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\estrutura.h
+1754221892 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\estrutura.h
 	"Objeto.h"
 	"perc/PercIT.h"
 	"comp/ObjComparador.h"
@@ -442,7 +442,7 @@
 
 1753878539 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.h
 
-1754150248 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
+1754221847 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
 	"estrutura/IDArvore.h"
 	"estrutura/IDObjeto.h"

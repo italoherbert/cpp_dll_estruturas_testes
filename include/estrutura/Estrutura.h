@@ -19,6 +19,7 @@ class ESTRUTURA_API Estrutura {
 		virtual void insere( Objeto* ) = 0;
 		virtual void percorre( PercIT* ) = 0;
 		virtual Iterador* it() = 0;
+		virtual Iterador* inversoIt() = 0;
 		virtual Objeto* busca( CampoComparador* ) = 0;
 		virtual bool altera( CampoComparador*, Objeto* ) = 0;
 		virtual Objeto* deleta( CampoComparador* ) = 0;

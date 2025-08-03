@@ -10,7 +10,7 @@ class ArvoreOrdemCentralIterador : public Iterador {
     private:
         Arv* perc;
         bool vaiParaBaixo;
-        bool vemDeCima;
+        bool vemDaEsquerda;
 
         Arv* menorEsq( Arv* );
         Arv* paiNaoIterado( Arv* );

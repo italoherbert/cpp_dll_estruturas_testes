@@ -44,6 +44,7 @@ class ARVORE_API Arvore : public Estrutura {
 		void insere( Objeto* );
 		void percorre( PercIT* );
 		Iterador* it();
+		Iterador* inversoIt();
 		Objeto* busca( CampoComparador* );
 		bool altera( CampoComparador*, Objeto* );
 		Objeto* deleta( CampoComparador* );

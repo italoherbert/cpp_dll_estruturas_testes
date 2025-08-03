@@ -22,12 +22,18 @@ namespace arvore_testes {
 
     void insereTeste();
     void iteradorTeste();
+    void iteradorTeste2();
+    void inversoIteradorTeste();
+    void inversoIteradorTeste2();
     void alteraTeste();
     void deletaTeste();
     void buscaTeste();
     void percorrePreOrdemTeste();
     void percorreOrdemCentralTeste();
     void percorrePosOrdemTeste();
+
+    void testaIterador( vector<int> ids );
+    void testaInversoIterador( vector<int> ids );
 
     IDObjeto* criaIDObjeto( int );
     IDArvore* criaArvore( vector<int> );
@@ -36,11 +42,15 @@ namespace arvore_testes {
     vector<int> criaPreOrdemIDs();
     vector<int> criaOrdemCentralIDs();
     vector<int> criaPosOrdemIDs();
+    vector<int> vectorArvore( IDArvore* arv );
 
     bool executaTodosOsTestes() {
         Testes testes( "arvore" );
         testes.add( "insereTeste", insereTeste );
         testes.add( "iteradorTeste", iteradorTeste );
+        testes.add( "iteradorTeste2", iteradorTeste2 );
+        testes.add( "inversoIteradorTeste", inversoIteradorTeste );
+        testes.add( "inversoIteradorTeste2", inversoIteradorTeste2 );
         testes.add( "alteraTeste", alteraTeste );
         testes.add( "deletaTeste", deletaTeste );
         testes.add( "buscaTeste", buscaTeste );
@@ -59,27 +69,53 @@ namespace arvore_testes {
 
     void iteradorTeste() {
         vector<int> ids = { 20, 10, 5, 8, 1, 6, 7,  25, 21, 22, 30 };
+        testaIterador( ids );
+    }
+
+    void iteradorTeste2() {
+        vector<int> ids = criaIDs();
+        testaIterador( ids );
+    }
+
+    void inversoIteradorTeste() {
+        vector<int> ids = { 20, 10, 5, 8, 1, 6, 7,  25, 21, 22, 30 };
+        testaInversoIterador( ids );
+    }
+
+    void inversoIteradorTeste2() {
+        vector<int> ids = criaIDs();
+        testaInversoIterador( ids );
+    }
+
+    void testaIterador( vector<int> ids ) {
         vector<int> inseridos;
 
         vector<int> ordenados( ids.size() );
         copy( ids.begin(), ids.end(), ordenados.begin() );
-
         sort( ordenados.begin(), ordenados.end() );
 
         IDArvore* arv = criaArvore( ids );
-
-        std::cout << "\nArvore= ";
-        int c = 0;
-
         Iterador* it = arv->it();
         while( it->temProx() ) {
             int id = ((IDObjeto*)it->prox())->getId();
             inseridos.push_back( id );
+        }
 
-            if ( c < 20 ) {
-                cout << id << " ";
-                c++;
-            }
+        testesunit::devemSerIguais( inseridos, ordenados );
+    }
+
+    void testaInversoIterador( vector<int> ids ) {
+        vector<int> inseridos;
+
+        vector<int> ordenados( ids.size() );
+        copy( ids.begin(), ids.end(), ordenados.begin() );
+        sort( ordenados.begin(), ordenados.end(), greater<int>() );
+
+        IDArvore* arv = criaArvore( ids );
+        Iterador* it = arv->inversoIt();
+        while( it->temProx() ) {
+            int id = ((IDObjeto*)it->prox())->getId();
+            inseridos.push_back( id );
         }
 
         testesunit::devemSerIguais( inseridos, ordenados );
@@ -142,24 +178,18 @@ namespace arvore_testes {
         testesunit::devemSerIguais( arv->tamanho(), 10 );
 
         arv->deleta( 5 );
-        //arv->deleta( 16 );
-        //arv->deleta( 1 );
-        //arv->deleta( 10 );
+        arv->deleta( 16 );
+        arv->deleta( 1 );
+        arv->deleta( 10 );
 
         ids.erase( ids.begin() + vectutil::indice( ids, 5 ) );
-        //ids.erase( ids.begin() + vectutil::indice( ids, 16 ) );
-        //ids.erase( ids.begin() + vectutil::indice( ids, 1 ) );
-        //ids.erase( ids.begin() + vectutil::indice( ids, 10 ) );
+        ids.erase( ids.begin() + vectutil::indice( ids, 16 ) );
+        ids.erase( ids.begin() + vectutil::indice( ids, 1 ) );
+        ids.erase( ids.begin() + vectutil::indice( ids, 10 ) );
 
         sort( ids.begin(), ids.end() );
 
-        vector<int> inseridos;
-
-        Iterador* it = arv->it();
-        while( it->temProx() ) {
-            int num = ((IDObjeto*)it->prox())->getId();
-            inseridos.push_back( num );
-        }
+        vector<int> inseridos = vectorArvore( arv );
 
         IDObjeto* dados = arv->deleta( 0 );
 
@@ -206,6 +236,16 @@ namespace arvore_testes {
 
     vector<int> criaPosOrdemIDs() {
         vector<int> ids = { 1, 2, 4, 3, 5, 17, 16, 19, 18, 10 };
+        return ids;
+    }
+
+    vector<int> vectorArvore( IDArvore* arv ) {
+        vector<int> ids;
+
+        Iterador* it = arv->it();
+        while( it->temProx() )
+            ids.push_back( ((IDObjeto*)it->prox())->getId() );
+
         return ids;
     }
 
