@@ -9,7 +9,7 @@
 #include "util/vectutil.h"
 
 #include "testesunit/testesunit.h"
-#include "testesunit/Testes.h"
+#include "testesunit/TestesGrupo.h"
 
 #include <iostream>
 #include <vector>
@@ -44,20 +44,20 @@ namespace arvore_testes {
     vector<int> criaPosOrdemIDs();
     vector<int> vectorArvore( IDArvore* arv );
 
-    bool executaTodosOsTestes() {
-        Testes testes( "arvore" );
-        testes.add( "insereTeste", insereTeste );
-        testes.add( "iteradorTeste", iteradorTeste );
-        testes.add( "iteradorTeste2", iteradorTeste2 );
-        testes.add( "inversoIteradorTeste", inversoIteradorTeste );
-        testes.add( "inversoIteradorTeste2", inversoIteradorTeste2 );
-        testes.add( "alteraTeste", alteraTeste );
-        testes.add( "deletaTeste", deletaTeste );
-        testes.add( "buscaTeste", buscaTeste );
-        testes.add( "percorrePreOrdemTeste", percorrePreOrdemTeste );
-        testes.add( "percorreOrdemCentralTeste", percorreOrdemCentralTeste );
-        testes.add( "percorrePosOrdemTeste", percorrePosOrdemTeste );
-        return testes.executa();
+    TestesGrupo* executaTodosOsTestes() {
+        TestesGrupo* testes = new TestesGrupo( "arvore" );
+        testes->add( "insereTeste", insereTeste );
+        testes->add( "iteradorTeste", iteradorTeste );
+        testes->add( "iteradorTeste2", iteradorTeste2 );
+        testes->add( "inversoIteradorTeste", inversoIteradorTeste );
+        testes->add( "inversoIteradorTeste2", inversoIteradorTeste2 );
+        testes->add( "alteraTeste", alteraTeste );
+        testes->add( "deletaTeste", deletaTeste );
+        testes->add( "buscaTeste", buscaTeste );
+        testes->add( "percorrePreOrdemTeste", percorrePreOrdemTeste );
+        testes->add( "percorreOrdemCentralTeste", percorreOrdemCentralTeste );
+        testes->add( "percorrePosOrdemTeste", percorrePosOrdemTeste );
+        return testes;
     }
 
     void insereTeste() {

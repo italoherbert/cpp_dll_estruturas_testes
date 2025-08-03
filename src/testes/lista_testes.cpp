@@ -6,7 +6,7 @@
 #include "estrutura/perc/VectorIDPercIT.h"
 
 #include "testesunit/testesunit.h"
-#include "testesunit/Testes.h"
+#include "testesunit/TestesGrupo.h"
 
 #include "util/vectutil.h"
 
@@ -36,21 +36,21 @@ namespace lista_testes {
     IDObjeto* criaIDObjeto( int );
     vector<int> vectorIDs( IDLista* );
 
-    bool executaTodosOsTestes() {
-        Testes testes( "lista" );
-        testes.add( "insereTeste", insereTeste );
-        testes.add( "insereNoInicioTeste", insereNoInicioTeste );
-        testes.add( "insereNoFimTeste", insereNoFimTeste );
-        testes.add( "iteradorTeste", iteradorTeste );
-        testes.add( "inversoIteradorTeste", inversoIteradorTeste );
-        testes.add( "buscaTeste", buscaTeste );
-        testes.add( "alteraTeste", alteraTeste );
-        testes.add( "deletaTeste", deletaTeste );
-        testes.add( "popTeste", popTeste );
-        testes.add( "getTeste", getTeste );
-        testes.add( "percorreTeste", percorreTeste );
-        testes.add( "percorreOrdemInversaTeste", percorreOrdemInversaTeste );
-        return testes.executa();
+    TestesGrupo* executaTodosOsTestes() {
+        TestesGrupo* testes = new TestesGrupo( "lista" );
+        testes->add( "insereTeste", insereTeste );
+        testes->add( "insereNoInicioTeste", insereNoInicioTeste );
+        testes->add( "insereNoFimTeste", insereNoFimTeste );
+        testes->add( "iteradorTeste", iteradorTeste );
+        testes->add( "inversoIteradorTeste", inversoIteradorTeste );
+        testes->add( "buscaTeste", buscaTeste );
+        testes->add( "alteraTeste", alteraTeste );
+        testes->add( "deletaTeste", deletaTeste );
+        testes->add( "popTeste", popTeste );
+        testes->add( "getTeste", getTeste );
+        testes->add( "percorreTeste", percorreTeste );
+        testes->add( "percorreOrdemInversaTeste", percorreOrdemInversaTeste );
+        return testes;
     }
 
     void insereTeste() {

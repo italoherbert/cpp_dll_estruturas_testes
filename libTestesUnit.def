@@ -1,29 +1,49 @@
 EXPORTS
-    _ZN10testesunit11deveSerNuloEPvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @1
-    _ZN10testesunit12deveSerFalsoEbNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @2
-    _ZN10testesunit14deveSerNaoNuloEPvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @3
-    _ZN10testesunit14deveSerVerdadeEbNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @4
-    _ZN10testesunit14devemSerIguaisENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ @5
-    _ZN10testesunit14devemSerIguaisEPiS0_iNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @6
-    _ZN10testesunit14devemSerIguaisEPvS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @7
-    _ZN10testesunit14devemSerIguaisESt6vectorIiSaIiEES2_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @8
-    _ZN10testesunit14devemSerIguaisEddNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @9
-    _ZN10testesunit14devemSerIguaisEffNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @10
-    _ZN10testesunit14devemSerIguaisEiiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @11
-    _ZN10testesunit18devemSerDiferentesENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ @12
-    _ZN10testesunit18devemSerDiferentesEPiS0_iNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @13
-    _ZN10testesunit18devemSerDiferentesEPvS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @14
-    _ZN10testesunit18devemSerDiferentesESt6vectorIiSaIiEES2_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @15
-    _ZN10testesunit18devemSerDiferentesEddNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @16
-    _ZN10testesunit18devemSerDiferentesEffNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @17
-    _ZN10testesunit18devemSerDiferentesEiiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @18
-    _ZN11teste_errorC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @19
-    _ZN11teste_errorC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @20
-    _ZN13GrupoDeTestes3addESt8functionIFbvEE @21
-    _ZN13GrupoDeTestes7executaEv @22
-    _ZN6Testes3addENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt8functionIFvvEE @23
-    _ZN6Testes7executaEv @24
-    _ZN6TestesC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @25
-    _ZN6TestesC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @26
-    _ZTI11teste_error @27 DATA
-    _ZTV11teste_error @28 DATA
+    _ZN10TestesMenu10mostraMenuESt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE @1
+    _ZN10TestesMenu7executaEv @2
+    _ZN10TestesMenu7leOpcaoEi @3
+    _ZN10TestesMenuC1EP6Testes @4
+    _ZN10TestesMenuC2EP6Testes @5
+    _ZN10testesunit11deveSerNuloEPvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @6
+    _ZN10testesunit12deveSerFalsoEbNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @7
+    _ZN10testesunit14deveSerNaoNuloEPvNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @8
+    _ZN10testesunit14deveSerVerdadeEbNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @9
+    _ZN10testesunit14devemSerIguaisENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ @10
+    _ZN10testesunit14devemSerIguaisEPiS0_iNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @11
+    _ZN10testesunit14devemSerIguaisEPvS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @12
+    _ZN10testesunit14devemSerIguaisESt6vectorIiSaIiEES2_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @13
+    _ZN10testesunit14devemSerIguaisEddNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @14
+    _ZN10testesunit14devemSerIguaisEffNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @15
+    _ZN10testesunit14devemSerIguaisEiiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @16
+    _ZN10testesunit18devemSerDiferentesENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ @17
+    _ZN10testesunit18devemSerDiferentesEPiS0_iNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @18
+    _ZN10testesunit18devemSerDiferentesEPvS0_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @19
+    _ZN10testesunit18devemSerDiferentesESt6vectorIiSaIiEES2_NSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @20
+    _ZN10testesunit18devemSerDiferentesEddNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @21
+    _ZN10testesunit18devemSerDiferentesEffNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @22
+    _ZN10testesunit18devemSerDiferentesEiiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @23
+    _ZN11TestesGrupo12executaTesteEi @24
+    _ZN11TestesGrupo14getQuantTestesEv @25
+    _ZN11TestesGrupo14testeFuncNomesB5cxx11Ev @26
+    _ZN11TestesGrupo3addENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt8functionIFvvEE @27
+    _ZN11TestesGrupo7executaEv @28
+    _ZN11TestesGrupoC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @29
+    _ZN11TestesGrupoC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @30
+    _ZN11TestesSuite12executaTesteEi @31
+    _ZN11TestesSuite14testeFuncNomesB5cxx11Ev @32
+    _ZN11TestesSuite3addEP11TestesGrupo @33
+    _ZN11TestesSuite7executaEv @34
+    _ZN11teste_errorC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @35
+    _ZN11teste_errorC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE @36
+    _ZN12TestesResult11getMensagemB5cxx11Ev @37
+    _ZN12TestesResult13getQuantErrosEv @38
+    _ZN12TestesResultC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi @39
+    _ZN12TestesResultC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi @40
+    _ZTI11TestesGrupo @41 DATA
+    _ZTI11TestesSuite @42 DATA
+    _ZTI11teste_error @43 DATA
+    _ZTI6Testes @44 DATA
+    _ZTV11TestesGrupo @45 DATA
+    _ZTV11TestesSuite @46 DATA
+    _ZTV11teste_error @47 DATA
+    _ZTV6Testes @48 DATA

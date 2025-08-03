@@ -434,15 +434,15 @@
 	<iostream>
 	<string>
 
-1753878766 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\main.cpp
+1754240477 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\main.cpp
 	<iostream>
 	"testes/testes_main.h"
 	"agenda/ArvoreAgenda.h"
 	<iostream>
 
-1753878539 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.h
+1754240470 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.h
 
-1754221847 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
+1754245459 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.cpp
 	"arvore_testes.h"
 	"estrutura/IDArvore.h"
 	"estrutura/IDObjeto.h"
@@ -450,13 +450,14 @@
 	"estrutura/it/Iterador.h"
 	"util/vectutil.h"
 	"testesunit/testesunit.h"
-	"testesunit/Testes.h"
+	"testesunit/TestesGrupo.h"
 	<iostream>
 	<vector>
 	<algorithm>
 	<functional>
 
-1753910789 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.h
+1754245474 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\arvore_testes.h
+	"testesunit/TestesGrupo.h"
 
 1753639612 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\comp\idcampocomparador.h
 	"CampoComparador.h"
@@ -470,11 +471,13 @@
 	<vector>
 	<functional>
 
-1754043656 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.cpp
+1754245604 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\testes_main.cpp
 	"testes_main.h"
 	"arvore_testes.h"
 	"lista_testes.h"
-	"testesunit/GrupoDeTestes.h"
+	"testesunit/TestesSuite.h"
+	"testesunit/TestesMenu.h"
+	<iostream>
 
 1753985558 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\util\testes\testesutil.h
 	<iostream>
@@ -498,8 +501,8 @@
 	<iostream>
 	<vector>
 
-1753996784 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testes.h
-	<iostream>
+1754245326 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testes.h
+	"TestesResult.h"
 	<functional>
 	<vector>
 
@@ -510,19 +513,20 @@
 	"PercIT.h"
 	"../Objeto.h"
 
-1754050867 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.cpp
+1754245560 source:c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.cpp
 	"lista_testes.h"
 	"estrutura/IDObjeto.h"
 	"estrutura/IDLista.h"
 	"estrutura/perc/VectorIDPercIT.h"
 	"testesunit/testesunit.h"
-	"testesunit/Testes.h"
+	"testesunit/TestesGrupo.h"
 	"util/vectutil.h"
 	<iostream>
 	<vector>
 	<algorithm>
 
-1754041669 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.h
+1754245483 c:\users\italo\workspace-cpp\dlls\estruturastestes\src\testes\lista_testes.h
+	"testesunit/TestesGrupo.h"
 
 1754042260 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\idlista.h
 	"Lista.h"
@@ -538,12 +542,37 @@
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
 
-1754043573 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\grupodetestes.h
-	<iostream>
-	<functional>
-	<vector>
+1754241540 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\grupodetestes.h
+	<string>
+	"GTestes.h"
+	"Testes.h"
+	"TestesResult.h"
 
 1754049582 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\estrutura\perc\vectoridpercit.h
 	"PercIT.h"
 	<vector>
+
+1754225929 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testesresult.h
+	<string>
+
+1754241257 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\gtestes.h
+	"TestesResult.h"
+	<functional>
+	<vector>
+
+1754245388 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testesmenu.h
+	"Testes.h"
+	<iostream>
+	<vector>
+
+1754245159 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testesgrupo.h
+	<string>
+	"Testes.h"
+	"TestesResult.h"
+
+1754245336 c:\users\italo\workspace-cpp\dlls\estruturastestes\include\testesunit\testessuite.h
+	<string>
+	"Testes.h"
+	"TestesGrupo.h"
+	"TestesResult.h"
 

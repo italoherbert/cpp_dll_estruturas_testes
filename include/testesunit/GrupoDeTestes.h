@@ -7,20 +7,25 @@
 #define GRUPO_DE_TESTES_API __declspec(dllimport)
 #endif
 
-#include <iostream>
-#include <functional>
-#include <vector>
+#include <string>
+
+#include "GTestes.h"
+#include "Testes.h"
+#include "TestesResult.h"
 
 using namespace std;
 
-class GRUPO_DE_TESTES_API GrupoDeTestes {
+class GRUPO_DE_TESTES_API GrupoDeTestes : public GTestes {
 
     private:
-        vector<function<bool()>> funcs;
+        vector<Testes*> testesVect;
 
     public:
-        void add( function<bool()> );
-        bool executa();
+        void add( Testes* );
+
+        vector<string> testeFuncNomes();
+        TestesResult* executaTeste( int testeIndice );
+        TestesResult* executa();
 
 };
 

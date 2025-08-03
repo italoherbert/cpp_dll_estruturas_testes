@@ -3,4 +3,6 @@
 
 void executaTodosOsTestes();
 
+void executaUmTeste();
+
 #endif

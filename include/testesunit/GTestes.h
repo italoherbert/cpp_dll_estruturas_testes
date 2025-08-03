@@ -1,10 +1,10 @@
-#ifndef TESTES_H
-#define TESTES_H
+#ifndef GTESTES_H
+#define GTESTES_H
 
 #if BUILD_DLL
-#define TESTES_API __declspec(dllexport)
+#define GTESTES_API __declspec(dllexport)
 #else
-#define TESTES_API __declspec(dllimport)
+#define GTESTES_API __declspec(dllimport)
 #endif
 
 #include "TestesResult.h"
@@ -12,7 +12,7 @@
 #include <functional>
 #include <vector>
 
-class TESTES_API Testes {
+class GTESTES_API GTestes {
 
     public:
         virtual vector<string> testeFuncNomes() = 0;

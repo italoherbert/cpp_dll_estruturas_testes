@@ -9,8 +9,9 @@ using namespace std;
 
 int main(int argc, char** argv) {
     int op;
-    cout << "(1) - Testes" << endl;
-    cout << "(2) - Agenda" << endl;
+    cout << "(1) - Todos os testes" << endl;
+    cout << "(2) - Um teste" << endl;
+    cout << "(3) - Agenda" << endl;
     cout << "Informe a opcao: ";
     cin >> op;
     cout << endl;
@@ -20,6 +21,9 @@ int main(int argc, char** argv) {
             executaTodosOsTestes();
             break;
         case 2:
+            executaUmTeste();
+            break;
+        case 3:
             ArvoreAgenda* agenda = new ArvoreAgenda();
             agenda->exec();
             break;
